@@ -1,63 +1,50 @@
 # 🎳 Bowling Mirabel - Modern Website
 
-A stunning, modern redesign of the Bowling Mirabel website built with Vite, featuring a sleek dark theme with vibrant gradients and smooth animations.
+A stunning, modern redesign of the Bowling Mirabel website featuring an interactive bowling game, smooth animations, and a sleek dark theme.
 
 ## 🌟 Features
 
+- **Interactive Bowling Game**: Play a mini bowling game right in the hero section
 - **Modern Design**: Dark theme with vibrant orange/teal gradients
 - **Fully Responsive**: Optimized for all devices (mobile, tablet, desktop)
-- **Smooth Animations**: Intersection Observer API for scroll animations
-- **Interactive Elements**: Tab navigation, mobile menu, smooth scrolling
-- **Cosmic Bowling Banner**: Eye-catching animated banner
-- **Service Showcase**: 8 service cards with hover effects
-- **Package System**: Tabbed interface for kids and adult party packages
-- **Contact Form**: Integrated contact form with validation
-- **SEO Optimized**: Proper meta tags and semantic HTML
+- **Smooth Animations**: AOS animations, particle effects, and interactive elements
+- **Real Content**: All pricing, packages, and contact information from the original site
+- **Performance Optimized**: Fast loading with Vite build system
 
-## 📋 Content Scraped from Original Site
+## 🚀 Live Demo
+
+Visit the live site: [Your GitHub Pages URL will be here]
+
+## 📋 Content
 
 ### Contact Information
 - **Address**: 244 Rue Scott, Saint-Jérôme, QC J7Z 1H1
 - **Phone**: 450-432-1757
-- **Emails**: 
-  - info@bowlingmirabel.ca
-  - linda@bowlingmirabel.ca
-  - diana@bowlingmirabel.ca
-- **Admin Hours**: 10h00 - 15h00
+- **Emails**: info@bowlingmirabel.ca, linda@bowlingmirabel.ca, diana@bowlingmirabel.ca
 
 ### Services
-- 24 bowling lanes (grosses quilles)
+- 24 bowling lanes
 - Cosmic Bowling (Friday 6pm-midnight, Saturday 1pm-midnight)
 - Bar & Video Poker (18+)
-- Snack bar (casse-croûte)
+- Snack bar
 - Pro Shop
 - Party packages
 - Tournaments
 - Group events (30+ people)
 
 ### Party Packages
-All packages include:
-- 2 games of bowling
-- 1 pair of shoes
-- Cake room for 1 hour (subject to availability)
-- All prices include taxes
+- **Kids Packages**: $22.00 - $28.00
+- **Adult Packages**: $24.50 - $30.50
+- All packages include 2 games, shoes, food/drink, and cake room
 
-**Package Options** (Kids & Adults):
-1. Chips Package: Fountain drink + chips
-2. Water Package: Bottled water + chips
-3. Slush Package: Slush + chips
-4. Hot-Dog Package: Fountain drink + hot-dog
-5. Pogo Package: Fountain drink + pogo
-6. Hamburger Package: Fountain drink + hamburger
-7. Poutine Package: Fountain drink + poutine
+## 🛠️ Technologies
 
-## 🚀 Getting Started
+- **Vite**: Fast build tool and dev server
+- **Vanilla JavaScript**: No framework dependencies
+- **CSS3**: Modern CSS with custom properties and animations
+- **HTML5**: Semantic markup
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
+## 💻 Development
 
 ```bash
 # Install dependencies
@@ -73,41 +60,26 @@ npm run build
 npm run preview
 ```
 
-## 🎨 Design System
+## 🚀 Deployment to GitHub Pages
 
-### Colors
-- **Primary**: Orange gradient (#FF6B35 → #F7931E)
-- **Secondary**: Teal (#4ECDC4)
-- **Accent**: Yellow (#FFE66D)
-- **Dark Background**: #0A0E27
-- **Dark Card**: #141B3D
+### Automatic Deployment (Recommended)
 
-### Typography
-- **Display Font**: Bebas Neue (headings, titles)
-- **Body Font**: Inter (paragraphs, UI elements)
+1. Push your code to GitHub
+2. Go to repository Settings → Pages
+3. Under "Build and deployment", select "GitHub Actions"
+4. The site will automatically deploy on every push to main branch
 
-### Components
-- Responsive navigation with mobile menu
-- Hero section with animated bowling ball
-- Service cards with hover effects
-- Tabbed package system
-- Gallery grid with placeholders
-- Contact form with validation
-- Footer with multiple columns
+### Manual Deployment
 
-## 📱 Responsive Breakpoints
-- Desktop: 1024px+
-- Tablet: 768px - 1023px
-- Mobile: < 768px
+```bash
+# Install gh-pages
+npm install -D gh-pages
 
-## 🛠️ Technologies Used
-- **Vite**: Fast build tool and dev server
-- **Vanilla JavaScript**: No framework dependencies
-- **CSS3**: Modern CSS with custom properties
-- **HTML5**: Semantic markup
-- **Google Fonts**: Bebas Neue & Inter
+# Deploy to GitHub Pages
+npm run deploy
+```
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
 bowling-mirabel/
@@ -120,7 +92,8 @@ bowling-mirabel/
 │   │   ├── packages.css
 │   │   ├── gallery.css
 │   │   ├── contact.css
-│   │   └── footer.css
+│   │   ├── footer.css
+│   │   └── enhancements.css
 │   └── style.css
 ├── src/
 │   └── main.js
@@ -130,26 +103,42 @@ bowling-mirabel/
 └── package.json
 ```
 
-## ✨ Key Features Implemented
+## ✨ Key Features
 
-1. **Sticky Header**: Transparent header that becomes solid on scroll
-2. **Mobile Menu**: Slide-in navigation for mobile devices
-3. **Smooth Scrolling**: Anchor links with smooth scroll behavior
-4. **Tab System**: Switch between kids and adult packages
-5. **Scroll Animations**: Elements fade in as you scroll
-6. **Parallax Effect**: Hero image moves with scroll
-7. **Hover Effects**: Interactive cards and buttons
-8. **Form Handling**: Contact form with basic validation
+### Interactive Bowling Game
+- 10 realistic bowling pins
+- Animated bowling ball with physics
+- Score tracking
+- Strike detection
+- Auto-reset functionality
 
-## 🎯 Future Enhancements
+### Animations
+- Particle background system
+- Scroll-triggered animations
+- 3D card effects
+- Smooth transitions
+- Parallax scrolling
 
-- Add real images to gallery section
-- Integrate with backend for form submissions
-- Add online booking system
-- Implement image lightbox for gallery
-- Add Google Maps integration
-- Create admin dashboard for content management
-- Add multilingual support (English/French toggle)
+### Design Elements
+- Custom scrollbar
+- Scroll progress bar
+- Back-to-top button
+- Lightbox gallery
+- Mobile-optimized menu
+- Glowing effects
+
+## 📱 Responsive Design
+
+- Desktop: 1024px+
+- Tablet: 768px - 1023px
+- Mobile: < 768px
+
+## 🎨 Color Scheme
+
+- Primary: Orange gradient (#FF6B35 → #F7931E)
+- Secondary: Teal (#4ECDC4)
+- Accent: Yellow (#FFE66D)
+- Background: Dark (#0A0E27)
 
 ## 📄 License
 
@@ -160,7 +149,8 @@ All content belongs to Bowling Mirabel. This is a redesign project.
 - Original content: bowlingmirabel.ca
 - Design & Development: Created with Kiro AI
 - Fonts: Google Fonts (Bebas Neue, Inter)
+- Images: Unsplash & PNG sources
 
 ---
 
-**Note**: This is a redesign project. All business information, services, and pricing are based on the original website content scraped from bowlingmirabel.ca.
+**Built with ❤️ for Bowling Mirabel**
