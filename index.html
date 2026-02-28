@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bowling-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bowling Mirabel - Salle de Quilles | Saint-Jérôme</title>
+    <meta name="description" content="24 allées de grosses quilles à Mirabel. Cosmic Bowling, bar, casse-croûte, forfaits fêtes et événements. Plaisir garanti!" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Header -->
+    <header class="header" data-header>
+      <nav class="nav container">
+        <div class="nav__logo">
+          <span class="logo-text">BOWLING</span>
+          <span class="logo-accent">MIRABEL</span>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#accueil" class="nav__link">Accueil</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#tarifs" class="nav__link">Tarifs</a></li>
+            <li class="nav__item"><a href="#forfaits" class="nav__link">Forfaits</a></li>
+            <li class="nav__item"><a href="#galerie" class="nav__link">Galerie</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <a href="tel:4504321757" class="btn btn--primary btn--phone">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>450-432-1757</span>
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+      <div class="hero__particles" id="particles"></div>
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__subtitle" data-aos="fade-up">Bienvenue à</span>
+          <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+            BOWLING<br>
+            <span class="gradient-text">MIRABEL</span>
+          </h1>
+          <p class="hero__description" data-aos="fade-up" data-aos-delay="200">
+            24 allées de grosses quilles pour un plaisir garanti!<br>
+            Cosmic Bowling tous les vendredis et samedis
+          </p>
+          <div class="hero__buttons" data-aos="fade-up" data-aos-delay="300">
+            <a href="#forfaits" class="btn btn--primary btn--large btn--glow">
+              <span>Réserver maintenant</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="#services" class="btn btn--secondary btn--large">Découvrir</a>
+          </div>
+          <div class="hero__info">
+            <div class="info-card" data-aos="fade-right" data-aos-delay="400">
+              <div class="info-card__icon">🎳</div>
+              <div class="info-card__content">
+                <h3>24 Allées</h3>
+                <p>Grosses quilles</p>
+              </div>
+            </div>
+            <div class="info-card" data-aos="fade-right" data-aos-delay="500">
+              <div class="info-card__icon">✨</div>
+              <div class="info-card__content">
+                <h3>Cosmic Bowling</h3>
+                <p>Vendredi & Samedi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image" data-aos="fade-left" data-aos-delay="300">
+          <div class="hero__image-wrapper">
+            <div class="bowling-game">
+              <div class="bowling-lane">
+                <!-- Bowling Pins (10-pin setup) -->
+                <div class="pin-container">
+                  <div class="pin pin-1" data-pin="1"></div>
+                  <div class="pin pin-2" data-pin="2"></div>
+                  <div class="pin pin-3" data-pin="3"></div>
+                  <div class="pin pin-4" data-pin="4"></div>
+                  <div class="pin pin-5" data-pin="5"></div>
+                  <div class="pin pin-6" data-pin="6"></div>
+                  <div class="pin pin-7" data-pin="7"></div>
+                  <div class="pin pin-8" data-pin="8"></div>
+                  <div class="pin pin-9" data-pin="9"></div>
+                  <div class="pin pin-10" data-pin="10"></div>
+                </div>
+                
+                <!-- Bowling Ball -->
+                <div class="bowling-ball-game" id="bowling-ball-game">
+                  <div class="ball-shine"></div>
+                </div>
+                
+                <!-- Strike Effect -->
+                <div class="strike-effect-game">STRIKE!</div>
+                
+                <!-- Score Display -->
+                <div class="score-display">
+                  <div class="score-label">Score</div>
+                  <div class="score-value" id="score-value">0</div>
+                </div>
+                
+                <!-- Play Button -->
+                <button class="play-btn" id="play-bowling">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                  <span>Jouer</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__cosmic-banner">
+        <div class="cosmic-banner__content">
+          <span class="cosmic-icon">✨</span>
+          <span class="cosmic-text">COSMIC BOWLING</span>
+          <span class="cosmic-time">VENDREDI 18H00 À MINUIT • SAMEDI 13H00 À MINUIT</span>
+          <span class="cosmic-icon">✨</span>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Nos Services</span>
+          <h2 class="section-title">Tout pour votre <span class="gradient-text">divertissement</span></h2>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">🎳</div>
+            <h3 class="service-card__title">Salle de Quilles</h3>
+            <p class="service-card__description">24 allées de grosses quilles avec système de pointage automatique</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">✨</div>
+            <h3 class="service-card__title">Cosmic Bowling</h3>
+            <p class="service-card__description">Ambiance électrisante avec lumières noires et musique</p>
+            <div class="service-card__badge">Populaire</div>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">🍻</div>
+            <h3 class="service-card__title">Bar & Vidéo Poker</h3>
+            <p class="service-card__description">Bar 18+ avec vidéo poker et ambiance conviviale</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">🍔</div>
+            <h3 class="service-card__title">Casse-croûte</h3>
+            <p class="service-card__description">Hot-dogs, hamburgers, poutines et plus encore</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">🎉</div>
+            <h3 class="service-card__title">Forfaits Fêtes</h3>
+            <p class="service-card__description">Forfaits personnalisés pour enfants et adultes</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">🏆</div>
+            <h3 class="service-card__title">Tournois</h3>
+            <p class="service-card__description">Événements et tournois réguliers</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">👥</div>
+            <h3 class="service-card__title">Groupes 30+</h3>
+            <p class="service-card__description">Forfaits spéciaux pour grands groupes</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+            <div class="service-card__glow"></div>
+            <div class="service-card__icon">🛍️</div>
+            <h3 class="service-card__title">Pro Shop</h3>
+            <p class="service-card__description">Équipement et accessoires de bowling</p>
+            <div class="service-card__hover-effect"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section class="pricing" id="tarifs">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Tarifs</span>
+          <h2 class="section-title">Prix <span class="gradient-text">compétitifs</span></h2>
+          <p class="section-description">Tous nos prix incluent les taxes</p>
+        </div>
+
+        <div class="pricing__note" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing__icon">📞</div>
+          <div class="pricing__content">
+            <p>Appelez-nous au <strong>450-432-1757</strong></p>
+            <p class="pricing__subtext">Pour connaître nos tarifs réguliers et nos promotions en cours</p>
+          </div>
+          <a href="tel:4504321757" class="btn btn--primary">Appeler maintenant</a>
+        </div>
+
+        <div class="pricing__features" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-item">
+            <div class="feature-icon">💳</div>
+            <h4>Paiements acceptés</h4>
+            <p>Débit, Visa, Mastercard, Carte cadeau</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎁</div>
+            <h4>Cartes cadeaux</h4>
+            <p>Disponibles sur place</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">👨‍👩‍👧‍👦</div>
+            <h4>Groupes bienvenus</h4>
+            <p>Forfaits spéciaux disponibles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forfaits -->
+    <section class="packages" id="forfaits">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Forfaits Fêtes</span>
+          <h2 class="section-title">Célébrez avec <span class="gradient-text">nous</span></h2>
+          <p class="section-description">Pour réservation: 450-432-1757</p>
+        </div>
+
+        <div class="packages__info">
+          <div class="info-box">
+            <h3>Informations importantes</h3>
+            <ul>
+              <li>✓ Enfants 12 ans et moins</li>
+              <li>✓ Souliers obligatoires</li>
+              <li>✓ 1 seul forfait par groupe</li>
+              <li>✓ Tous nos prix incluent les taxes</li>
+              <li>✓ Salle pour gâteau 1 heure seulement, selon disponibilité</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="packages__tabs">
+          <button class="tab-btn active" data-tab="enfants">Forfaits Enfants</button>
+          <button class="tab-btn" data-tab="adultes">Forfaits Adultes</button>
+        </div>
+
+        <div class="packages__content">
+          <!-- Forfaits Enfants -->
+          <div class="tab-content active" id="enfants">
+            <div class="packages__grid">
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "A" - Enfants</h3>
+                  <div class="package-card__price">22.00$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 chips</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "B" - Enfants</h3>
+                  <div class="package-card__price">22.00$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 bouteille d'eau</li>
+                  <li>1 chips</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "C" - Enfants</h3>
+                  <div class="package-card__price">23.00$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 slush</li>
+                  <li>1 chips</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card package-card--popular">
+                <div class="package-card__badge">Populaire</div>
+                <div class="package-card__header">
+                  <h3>Forfait "D" - Enfants</h3>
+                  <div class="package-card__price">23.25$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 hot-dog</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "E" - Enfants</h3>
+                  <div class="package-card__price">23.75$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 pogo</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "F" - Enfants</h3>
+                  <div class="package-card__price">26.00$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 hamburger</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card package-card--popular">
+                <div class="package-card__badge">Populaire</div>
+                <div class="package-card__header">
+                  <h3>Forfait "G" - Enfants</h3>
+                  <div class="package-card__price">28.00$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles enfants</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 poutine</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forfaits Adultes -->
+          <div class="tab-content" id="adultes">
+            <div class="packages__grid">
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "A" - Adultes</h3>
+                  <div class="package-card__price">24.50$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 chips</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "B" - Adultes</h3>
+                  <div class="package-card__price">24.50$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 bouteille d'eau</li>
+                  <li>1 chips</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "C" - Adultes</h3>
+                  <div class="package-card__price">25.50$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 slush</li>
+                  <li>1 chips</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card package-card--popular">
+                <div class="package-card__badge">Populaire</div>
+                <div class="package-card__header">
+                  <h3>Forfait "D" - Adultes</h3>
+                  <div class="package-card__price">25.75$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 hot-dog</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "E" - Adultes</h3>
+                  <div class="package-card__price">26.25$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 pogo</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card">
+                <div class="package-card__header">
+                  <h3>Forfait "F" - Adultes</h3>
+                  <div class="package-card__price">28.50$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 hamburger</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+
+              <div class="package-card package-card--popular">
+                <div class="package-card__badge">Populaire</div>
+                <div class="package-card__header">
+                  <h3>Forfait "G" - Adultes</h3>
+                  <div class="package-card__price">30.50$</div>
+                </div>
+                <ul class="package-card__features">
+                  <li>2 parties de quilles adultes</li>
+                  <li>1 paire de souliers</li>
+                  <li>1 liqueur fontaine</li>
+                  <li>1 poutine</li>
+                  <li>Salle pour gâteau (1h)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="packages__note">
+          <p>Tous nos prix incluent les taxes et tous les prix sont sujets à changement sans préavis</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="galerie">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle">Galerie</span>
+          <h2 class="section-title">Découvrez notre <span class="gradient-text">ambiance</span></h2>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery__item" data-aos="zoom-in" data-aos-delay="150">
+            <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?w=600&q=80" alt="Fêtes d'anniversaire" loading="lazy">
+            <div class="gallery__overlay">
+              <h3>Fêtes d'anniversaire</h3>
+              <p>Forfaits personnalisés</p>
+            </div>
+          </div>
+          <div class="gallery__item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Casse-croûte" loading="lazy">
+            <div class="gallery__overlay">
+              <h3>Casse-croûte</h3>
+              <p>Délicieux repas</p>
+            </div>
+          </div>
+          <div class="gallery__item" data-aos="zoom-in" data-aos-delay="250">
+            <img src="https://s.alicdn.com/@sc04/kf/H4618b0795a634477817a18d1aed4e3caB/Factory-Direct-Supply-Cheap-Price-Brunswick-Bowling-Machines-Bowling-Alley-Synthetic-Bowling-Lanes.png_300x300.jpg" alt="Équipement professionnel" loading="lazy">
+            <div class="gallery__overlay">
+              <h3>Équipement pro</h3>
+              <p>Boules et souliers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <h2 class="contact__title">Venez nous <span class="gradient-text">voir</span></h2>
+            <p class="contact__description">Nous sommes très contents de rencontrer nos clients. Passez donc nous voir pendant les heures normales!</p>
+
+            <div class="contact__details">
+              <div class="contact__item">
+                <div class="contact__icon">📍</div>
+                <div>
+                  <h3>Adresse</h3>
+                  <p>244 Rue Scott<br>Saint-Jérôme, QC J7Z 1H1</p>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon">📞</div>
+                <div>
+                  <h3>Téléphone</h3>
+                  <p><a href="tel:4504321757">450-432-1757</a></p>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon">✉️</div>
+                <div>
+                  <h3>Courriel</h3>
+                  <p>
+                    <a href="mailto:info@bowlingmirabel.ca">info@bowlingmirabel.ca</a><br>
+                    <a href="mailto:linda@bowlingmirabel.ca">linda@bowlingmirabel.ca</a><br>
+                    <a href="mailto:diana@bowlingmirabel.ca">diana@bowlingmirabel.ca</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact__item">
+                <div class="contact__icon">🕐</div>
+                <div>
+                  <h3>Horaire Administration</h3>
+                  <p>10h00 - 15h00</p>
+                  <small>*** Veuillez vous assurer qu'un représentant est disponible</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form">
+            <h3>Envoyez-nous un message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <input type="text" placeholder="Nom" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Courriel" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Téléphone" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--large">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="logo-text">BOWLING</span>
+              <span class="logo-accent">MIRABEL</span>
+            </div>
+            <p>24 allées de grosses quilles<br>Plaisir garanti!</p>
+          </div>
+
+          <div class="footer__links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#forfaits">Forfaits</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Salle de Quilles</a></li>
+              <li><a href="#services">Bar & Vidéo Poker</a></li>
+              <li><a href="#services">Casse-croûte</a></li>
+              <li><a href="#services">Pro Shop</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h4>Contact</h4>
+            <ul>
+              <li>244 Rue Scott</li>
+              <li>Saint-Jérôme, QC J7Z 1H1</li>
+              <li><a href="tel:4504321757">450-432-1757</a></li>
+              <li><a href="mailto:info@bowlingmirabel.ca">info@bowlingmirabel.ca</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>&copy; 2024 Salle de quilles Mirabel - Tous droits réservés</p>
+          <p class="footer__payment">Paiements acceptés: Débit • Visa • Mastercard • Carte cadeau</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+  </body>
+</html>

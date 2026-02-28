@@ -1,0 +1,127 @@
+/* Gallery Section */
+.gallery {
+  background: var(--dark-bg);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery__item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+}
+
+.gallery__item--large {
+  grid-column: span 2;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery__item:hover img {
+  transform: scale(1.15);
+}
+
+.gallery__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.95) 100%);
+  transform: translateY(100%);
+  transition: transform var(--transition-base);
+}
+
+.gallery__item:hover .gallery__overlay {
+  transform: translateY(0);
+}
+
+.gallery__overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.gallery__overlay p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.gallery__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.3) 0%, rgba(78, 205, 196, 0.3) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: 1;
+}
+
+.gallery__item:hover::before {
+  opacity: 1;
+}
+
+.gallery__item::after {
+  content: '🔍';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 3rem;
+  z-index: 2;
+  transition: transform var(--transition-base);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.gallery__item:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .gallery__item--large {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery__overlay {
+    padding: 1.5rem;
+  }
+
+  .gallery__overlay h3 {
+    font-size: 1.25rem;
+  }
+
+  .gallery__overlay p {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
