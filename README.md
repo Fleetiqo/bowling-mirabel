@@ -62,6 +62,19 @@ npm run preview
 
 ## 🚀 Deployment to GitHub Pages
 
+### Important: Configure Base Path
+
+The `vite.config.js` is already configured with `base: '/bowling-mirabel/'`. 
+
+**If your repository name is different**, update the base path in `vite.config.js`:
+
+```js
+export default defineConfig({
+  base: '/YOUR-REPO-NAME/',  // Change this to match your repo name
+  // ...
+})
+```
+
 ### Automatic Deployment (Recommended)
 
 1. Push your code to GitHub
